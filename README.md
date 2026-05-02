@@ -1,12 +1,12 @@
 # CastWord — Releases
 
-Distribution channel for [CastWord](https://github.com/CastWord/CastWord) macOS release binaries.
+Distribution channel for CastWord macOS release binaries.
 
 ## Latest
 
 | Version | Download | SHA-256 | Size | macOS |
 |---------|----------|---------|------|-------|
-| **1.0** | [CastWord-1.0.dmg](./CastWord-1.0.dmg) | `cbaf9c7e4d0742a68adc5f5fbbab677d84c25a30fd6f1f1a74d2b8a45a25f57a` | 886 KB | 13.0+ (Apple Silicon) |
+| **0.0.1** | [CastWord-0.0.1.dmg](./CastWord-0.0.1.dmg) | `cbaf9c7e4d0742a68adc5f5fbbab677d84c25a30fd6f1f1a74d2b8a45a25f57a` | 886 KB | 13.0+ (Apple Silicon) |
 
 ## Install
 
@@ -38,15 +38,15 @@ Grant these in **System Settings → Privacy & Security**:
 ## Verify
 
 ```bash
-shasum -a 256 CastWord-1.0.dmg
+shasum -a 256 CastWord-0.0.1.dmg
 ```
 
 Should match the SHA-256 in the table above.
 
 ## Older releases
 
-None yet. Older versions will remain in the repo on additional commits.
+None yet. Older versions will remain available as GitHub releases.
 
 ## Issues
 
-Report bugs at [github.com/CastWord/CastWord/issues](https://github.com/CastWord/CastWord/issues).
+Report bugs at [castword.ai](https://castword.ai) or open an issue on this repo.
