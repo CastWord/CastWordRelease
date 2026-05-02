@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# App bundles (build artifacts — only the released .dmg belongs in the repo)
+*.app/
+*.ipa
+*.xcarchive
+
+# DMG staging
+*.dmg.staging/
+dmg-staging/
+
+# Build intermediates
+*.o
+*.d
+*.swp
+*.tmp
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
