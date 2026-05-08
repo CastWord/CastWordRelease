@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.24</title>
+            <description><![CDATA[<ul><li>**Groq for cleanup.** Settings → Advanced → LLM Cleanup now has an OpenAI / Groq toggle, matching the existing Text Mode picker. Pick Groq, paste a `gsk-…` key, and cleanup runs on `llama-3.1-8b-instant` (fastest) or `llama-3.3-70b-versatile` (highest quality). Default stays OpenAI — opt in to switch.</li><li>**Latency stats.** A new card in Settings → Advanced shows mean ASR / LLM polish / paste / post-speech end-to-end across your last 10 dictations, so you can see where time is going and decide if a different model would help.</li><li>**Personal Dictionary in Settings.** Silent correction learning is now on by default; the captured corrections show up in Settings → Customization where you can review or remove them.</li><li>Every dictation also writes a `[Latency]` line to `/tmp/castword/debug.log` for diagnostics.</li></ul>]]></description>
+            <pubDate>Fri, 08 May 2026 13:57:30 +0000</pubDate>
+            <sparkle:version>24</sparkle:version>
+            <sparkle:shortVersionString>0.0.24</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.24/CastWord-0.0.24.dmg"
+                sparkle:edSignature="WRI7qDsJkYM10zSMG9MqJ1kmFUpWzehUY3vPF4GOuGmQICfkNX8X5Qyhqo40dfLylLpS6qzms/prkwPuLYuDCw=="
+                length="15710124"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.23</title>
             <description><![CDATA[<ul><li>**See your current version next to Check for Updates.** Settings now shows "Current version: 0.0.23 (build 23)" right beside the *Check for Updates…* button, so you can tell at a glance whether what Sparkle is offering is actually newer than what you're running.</li><li>Auto-update publish is now fully automated end-to-end — the appcast that drives Sparkle gets signed and pushed by the release pipeline directly, without a manual post-step.</li></ul>]]></description>
             <pubDate>Fri, 08 May 2026 08:11:55 +0000</pubDate>
