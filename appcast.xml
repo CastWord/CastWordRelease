@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.27</title>
+            <description><![CDATA[<p>See the full release notes on GitHub.</p>]]></description>
+            <pubDate>Fri, 08 May 2026 15:20:27 +0000</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>0.0.27</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.27/CastWord-0.0.27.dmg"
+                sparkle:edSignature="3rbCYrKNHTNWDw2Dv+eC5Mq5+QfLvFKjKVjHJD1MJF5RkOn8eP2xdyPVZaGA+KStZdj4AP8tvyk1BGll6o4LBg=="
+                length="15700691"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.24</title>
             <description><![CDATA[<ul><li>**Groq for cleanup.** Settings → Advanced → LLM Cleanup now has an OpenAI / Groq toggle, matching the existing Text Mode picker. Pick Groq, paste a `gsk-…` key, and cleanup runs on `llama-3.1-8b-instant` (fastest) or `llama-3.3-70b-versatile` (highest quality). Default stays OpenAI — opt in to switch.</li><li>**Latency stats.** A new card in Settings → Advanced shows mean ASR / LLM polish / paste / post-speech end-to-end across your last 10 dictations, so you can see where time is going and decide if a different model would help.</li><li>**Personal Dictionary in Settings.** Silent correction learning is now on by default; the captured corrections show up in Settings → Customization where you can review or remove them.</li><li>Every dictation also writes a `[Latency]` line to `/tmp/castword/debug.log` for diagnostics.</li></ul>]]></description>
             <pubDate>Fri, 08 May 2026 13:57:30 +0000</pubDate>
