@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.22</title>
+            <description><![CDATA[<ul><li>**Pick the model for each mode.** Text mode and Action mode now have their own model dropdowns in Settings (OpenAI + Groq, with pricing shown so you can see the trade-off).</li><li>**Context-aware transcription.** The dictation pass takes hints from the app you're in and your recent topics, so names and jargon you've used before come back correctly more often.</li><li>**Personalized formatting.** Per-app presets and a tone setting shape how your transcripts are punctuated and structured (e.g. terse code-comment style in your editor, full sentences in Slack).</li><li>**Audio-quality diagnostics.** A new in-app meter shows mic level + a one-line preflight check before recording, so silent-mic and wrong-device cases are caught up front.</li><li>**Correction learning.** When you edit a transcript, CastWord remembers the change and applies it next time — scoped per app with a loop guard so it can't drift into bad rules.</li><li>**Uncertainty signals.** Low-confidence words from the recogniser are flagged and the rare full-reject case is handled gracefully instead of silently producing garbage.</li><li>**Window-title sanitization.** Sensitive bits of window titles (filenames, URLs, etc.) are now redacted before being used as context, with a visible audit panel.</li><li>**Selection-context badge.** When CastWord uses your selected text for a command, a small badge shows what's being read.</li><li>**No more launch crash.** Resolved a SIGABRT (Swift exclusive-access violation) some users hit shortly after launch.</li><li>**Hotkey doesn't fire while you're rebinding it.** Capturing a new hotkey in Settings no longer triggers the existing one.</li><li>**API key from environment.** If `OPENAI_API_KEY` is set in your environment, CastWord uses it on first launch instead of starting blank.</li></ul>]]></description>
+            <pubDate>Fri, 08 May 2026 07:18:49 +0000</pubDate>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>0.0.22</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.22/CastWord-0.0.22.dmg"
+                sparkle:edSignature="6tjL7lDsE2H46Z8SOBN3DkLqrjuK+eRnkZMtP/ts7zUp7sYNWNFYXmvGrD/GPxIVELphQ0j/7fWA3QppqLmMDQ=="
+                length="15677581"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.21</title>
             <description><![CDATA[<ul><li>**Auto-update loop.** Sparkle's "An update is available" prompt no longer comes back after you install the latest version. (The build number stamped inside the app now matches the build number the appcast advertises, so Sparkle correctly recognises the update as installed.)</li></ul>]]></description>
             <pubDate>Fri, 08 May 2026 04:50:05 +0000</pubDate>
