@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.29</title>
+            <description><![CDATA[<ul><li>**Faster start of recording.** Holding a hotkey now starts the mic immediately; the pre-flight checks (audio settings, device snapshot) run in the background instead of blocking the first words you say.</li><li>Local `./build.sh` now reverts the auto-bumped patch number if the compile / codesign / install step fails, so a transient keychain hiccup no longer skips version numbers in the source plist.</li></ul>]]></description>
+            <pubDate>Fri, 08 May 2026 16:41:30 +0000</pubDate>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>0.0.29</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.29/CastWord-0.0.29.dmg"
+                sparkle:edSignature="s53yL1lR261wmHiNMk0Tk/kvggRTyd4leegGBhny8qC9GaLrPlWJYdaEtp7mmMJAyFLQbXBbm//MRUKzPp/fCA=="
+                length="15711081"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.28</title>
             <description><![CDATA[<p>See the full release notes on GitHub.</p>]]></description>
             <pubDate>Fri, 08 May 2026 16:02:04 +0000</pubDate>
