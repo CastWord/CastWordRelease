@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.21</title>
+            <description><![CDATA[<ul><li>**Auto-update loop.** Sparkle's "An update is available" prompt no longer comes back after you install the latest version. (The build number stamped inside the app now matches the build number the appcast advertises, so Sparkle correctly recognises the update as installed.)</li></ul>]]></description>
+            <pubDate>Fri, 08 May 2026 04:50:05 +0000</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>0.0.21</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.21/CastWord-0.0.21.dmg"
+                sparkle:edSignature="fPuggqiO5br24TIQfwAFxPzjIhJNEf96yZyKw8LHraqsAP+GGNCF2KL7E/mxPWbc7T85nhesFQ+hJrq6WxxPCQ=="
+                length="15516884"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.20</title>
             <description><![CDATA[<ul><li>**ESC cancels a recording.** Tap ESC while a hotkey is held and the in-progress recording is dropped — no transcription, no paste, nothing happens.</li><li>**Faster dictation.** Switched the transcription model to gpt-4o-mini-transcribe with streaming, so text appears noticeably sooner after you stop talking.</li><li>**Quieter Action Mode.** Tightened the Realtime prompt and stopped a class of duplicate tool-call firings that could happen right after a fast-path command (e.g. "open Safari" followed by a stray model-driven retry).</li><li>**Cleaner text mode.** The Stop button no longer appears during dictation, and the migration popup that used to interrupt some users on launch is suppressed.</li><li>**Status overlay on multi-monitor setups.** The overlay now shows on whichever screen your mouse cursor is on, instead of always pinning to the primary display.</li><li>**Corrections / snippets actually apply.** The text fixes you set in Settings (e.g. `teh = the`) now reach the cleanup pass instead of being silently dropped, and they're also fed to the LLM as soft hints.</li></ul>]]></description>
             <pubDate>Fri, 08 May 2026 04:27:45 +0000</pubDate>
