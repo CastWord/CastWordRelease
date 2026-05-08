@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.28</title>
+            <description><![CDATA[<p>See the full release notes on GitHub.</p>]]></description>
+            <pubDate>Fri, 08 May 2026 16:02:04 +0000</pubDate>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>0.0.28</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.28/CastWord-0.0.28.dmg"
+                sparkle:edSignature="Ro75Wfs89XxYhjbb/9VzI2usQsq/MCqWVC/hyCpd9V982kd69VYkC5TXE+wmy3r7f9WXvREPxfrLKTcyTdZ4DQ=="
+                length="15709671"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.27</title>
             <description><![CDATA[<p>See the full release notes on GitHub.</p>]]></description>
             <pubDate>Fri, 08 May 2026 15:20:27 +0000</pubDate>
