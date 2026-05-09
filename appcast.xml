@@ -7,6 +7,21 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.32</title>
+            <description><![CDATA[<ul><li>**Beta channel.** Settings → Updates now has a "Receive beta updates" toggle. Off by default — new releases land on the beta lane first and are promoted to stable only after a maintainer has smoke-tested them. Flip the toggle on to get pre-release builds early; switch it back off any time and you'll stick to stable from the next update onward.</li><li>**Refreshed UI.** Slack-style redesign across all surfaces — bigger readable fonts, the SF Pro system font throughout, cleaner dropdowns, and a new Recent tab.</li><li>**Releases are no longer instantly stable.** Until now every tagged release was visible to every user the moment CI finished. Going forward each release goes to the beta channel first; stable users only see it after a maintainer promotes it. This costs a few hours of lag in exchange for a working rollback path when something breaks. *(v0.0.32 itself is being promoted to stable on day one so existing users get the channel-aware code.)*</li><li>**"Advanced" tab is now "Models".** Settings tab renamed for clarity — that tab is where you pick which model handles each role.</li><li>**No more hang on VPN startup.** A network-path edge case (VPN split-tunnel, restricted loopback under some MDM profiles, firewall intercepting localhost) used to make the local bridge stall for ~22 seconds at launch, which macOS sometimes killed as "CastWord Quit Unexpectedly". Now the bridge moves on within a millisecond.</li><li>E2E test coverage expanded from 95 → 180 assertions, split into P0 (every push) and P1 (nightly) tiers.</li><li>Historical testing plan from May 5 cherry-picked into `docs/testing/` for posterity.</li></ul>]]></description>
+            <pubDate>Sat, 09 May 2026 07:10:44 +0000</pubDate>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>0.0.32</sparkle:shortVersionString>
+            <sparkle:channel>beta</sparkle:channel>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.32/CastWord-0.0.32.dmg"
+                sparkle:edSignature="PsRadYbUnv6Vwn3kfaOEMUbZFctOww4Z9UceyQWBQVrLBJo+S/mZriT3tlqc3BQiZppCA2KSX1U+UC1wxlMADw=="
+                length="15931902"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.31</title>
             <description><![CDATA[<ul><li>**Dictation works again out of the box.** v0.0.30 shipped with a model default that returned empty transcripts for new installs. Default is back to `whisper-1` for transcription and `gpt-4.1-nano` for cleanup, and if your API key is missing the overlay now tells you so instead of silently producing nothing.</li><li>**Hotkey doesn't fire on sleep / lock combos.** Hold-to-talk hotkeys now debounce key-down by 150ms, so the three-key chords macOS uses for sleep / lock screen don't accidentally trigger a recording.</li><li>**ESC actually cancels.** ESC during a recording now routes through the same cancel path as the 60-second watchdog, so the in-progress transcription is dropped instead of leaking through to paste.</li><li>**Simpler Settings.** Each provider/role now maps to one model — the per-row model dropdown is gone. Tone presets stay (they shape the LLM cleanup, not the model choice).</li><li>**Action mode overlay shows what was heard.** While Action mode is recording, the overlay streams a live "Heard: …" partial transcript so you can see whether your command landed before it executes.</li><li>Split text-mode and realtime logs to separate streams, plus optional Axiom remote shipping for diagnostics, plus app-match guards on plugin activation.</li></ul>]]></description>
             <pubDate>Sat, 09 May 2026 05:25:45 +0000</pubDate>
