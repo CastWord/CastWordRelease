@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.31</title>
+            <description><![CDATA[<ul><li>**Dictation works again out of the box.** v0.0.30 shipped with a model default that returned empty transcripts for new installs. Default is back to `whisper-1` for transcription and `gpt-4.1-nano` for cleanup, and if your API key is missing the overlay now tells you so instead of silently producing nothing.</li><li>**Hotkey doesn't fire on sleep / lock combos.** Hold-to-talk hotkeys now debounce key-down by 150ms, so the three-key chords macOS uses for sleep / lock screen don't accidentally trigger a recording.</li><li>**ESC actually cancels.** ESC during a recording now routes through the same cancel path as the 60-second watchdog, so the in-progress transcription is dropped instead of leaking through to paste.</li><li>**Simpler Settings.** Each provider/role now maps to one model — the per-row model dropdown is gone. Tone presets stay (they shape the LLM cleanup, not the model choice).</li><li>**Action mode overlay shows what was heard.** While Action mode is recording, the overlay streams a live "Heard: …" partial transcript so you can see whether your command landed before it executes.</li><li>Split text-mode and realtime logs to separate streams, plus optional Axiom remote shipping for diagnostics, plus app-match guards on plugin activation.</li></ul>]]></description>
+            <pubDate>Sat, 09 May 2026 05:25:45 +0000</pubDate>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>0.0.31</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.31/CastWord-0.0.31.dmg"
+                sparkle:edSignature="cfg8y4TPDQN4kyO20aRkFNGazW7dxl7zHgwwWCeoMs5f1pGH4+KC0rsppsh04uMlV1ti5H1TIb6Nd8aR1m+SCQ=="
+                length="15882210"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.30</title>
             <description><![CDATA[<ul><li>**Smarter command planning.** Action mode now plans multi-step requests with an LLM ("set a reminder for 5pm to call mom and then open Notes") instead of guessing one tool at a time, so chained commands run in the right order.</li><li>**Reminder time parsing.** Phrases like "in 20 minutes", "at 5pm", or "tomorrow at 9" now turn into the correct reminder time without you having to spell it out.</li><li>**Safe Mode.** A toggle in Settings → Action mode that blocks disruptive voice actions (sending messages, deleting files, etc.) until you switch it off — useful while you're getting comfortable with Action mode.</li><li>**Clearer overlay during Action mode.** The overlay now shows what was heard, what's running, and a visible cancel target — so you always know how to stop a run mid-flight.</li><li>**Cancel works mid-transcription.** The overlay's cancellable state is restored across every recording stage, with a unified layout no matter what stage Action mode is in.</li><li>**Reminders no longer hang the app.** Setting up a reminder now validates Automation permission first, runs off the main thread, and re-arms the hotkey tap if the underlying Reminders call gets stuck.</li><li>**Hold-to-talk respects your setting again.** Mouse + Action mode hotkeys honour `hotkey_style = hold` instead of falling back to toggle behaviour.</li><li>**Better dictation accuracy.** Realtime transcription now receives your language hint and preserves a standalone "I" as a capital letter.</li></ul>]]></description>
             <pubDate>Sat, 09 May 2026 03:14:53 +0000</pubDate>
