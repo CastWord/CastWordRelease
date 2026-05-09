@@ -7,6 +7,20 @@
         <language>en</language>
 
         <item>
+            <title>Version 0.0.30</title>
+            <description><![CDATA[<ul><li>**Smarter command planning.** Action mode now plans multi-step requests with an LLM ("set a reminder for 5pm to call mom and then open Notes") instead of guessing one tool at a time, so chained commands run in the right order.</li><li>**Reminder time parsing.** Phrases like "in 20 minutes", "at 5pm", or "tomorrow at 9" now turn into the correct reminder time without you having to spell it out.</li><li>**Safe Mode.** A toggle in Settings → Action mode that blocks disruptive voice actions (sending messages, deleting files, etc.) until you switch it off — useful while you're getting comfortable with Action mode.</li><li>**Clearer overlay during Action mode.** The overlay now shows what was heard, what's running, and a visible cancel target — so you always know how to stop a run mid-flight.</li><li>**Cancel works mid-transcription.** The overlay's cancellable state is restored across every recording stage, with a unified layout no matter what stage Action mode is in.</li><li>**Reminders no longer hang the app.** Setting up a reminder now validates Automation permission first, runs off the main thread, and re-arms the hotkey tap if the underlying Reminders call gets stuck.</li><li>**Hold-to-talk respects your setting again.** Mouse + Action mode hotkeys honour `hotkey_style = hold` instead of falling back to toggle behaviour.</li><li>**Better dictation accuracy.** Realtime transcription now receives your language hint and preserves a standalone "I" as a capital letter.</li></ul>]]></description>
+            <pubDate>Sat, 09 May 2026 03:14:53 +0000</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>0.0.30</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure
+                url="https://github.com/CastWord/CastWordRelease/releases/download/v0.0.30/CastWord-0.0.30.dmg"
+                sparkle:edSignature="qPPB5AlMV8M6OvOasnE3QImQQ1prEewE8DmQoemrM2DCTVKfRDOsZ1e+emsE1UcQh1SaRo+1kshHMy658o3GCQ=="
+                length="15877792"
+                type="application/octet-stream" />
+        </item>
+
+        <item>
             <title>Version 0.0.29</title>
             <description><![CDATA[<ul><li>**Faster start of recording.** Holding a hotkey now starts the mic immediately; the pre-flight checks (audio settings, device snapshot) run in the background instead of blocking the first words you say.</li><li>Local `./build.sh` now reverts the auto-bumped patch number if the compile / codesign / install step fails, so a transient keychain hiccup no longer skips version numbers in the source plist.</li></ul>]]></description>
             <pubDate>Fri, 08 May 2026 16:41:30 +0000</pubDate>
